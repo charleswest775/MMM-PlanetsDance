@@ -158,6 +158,6 @@
 		PLANETS, TABLE1, TABLE2, julian, fromJulian, centuries, elements, eccentricAnomaly,
 		heliocentric, geocentric, longitude, latitude, precession, period, synodic, nextZero, wrap180, wrap360
 	};
-	root.ChaosEphemeris = Ephemeris;
+	root.PlanetsEphemeris = Ephemeris;
 	if (typeof module !== "undefined") module.exports = Ephemeris;
 })(typeof window !== "undefined" ? window : globalThis);

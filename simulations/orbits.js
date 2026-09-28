@@ -1,4 +1,4 @@
-/* Not chaos: the planets' dance. Real orbits (JPL's elements, see ephemeris.js), from today,
+/* The planets' dance. Real orbits (JPL's elements, see ephemeris.js), from today,
  * drawn as figures that look like sacred geometry and are nothing but clockwork:
  *   lines: the line between two planets every few days (Earth and Venus: a five-petalled rose,
  *     because 8 Earth years ≈ 13 Venus years ≈ 5 times Venus laps Earth);
@@ -14,7 +14,7 @@
  * north: x towards the vernal equinox, y 90° on, so the planets go round anticlockwise.
  */
 (function (root) {
-	const E = root.ChaosEphemeris || require("./ephemeris.js");
+	const E = root.PlanetsEphemeris || require("./ephemeris.js");
 
 	const DAY = 86400000;
 	const YEAR = 365.25 * DAY;
@@ -384,7 +384,7 @@
 			return {
 				title: "The planets' dance",
 				subtitle: `${d.title} · ${typeof d.subtitle === "function" ? d.subtitle(this.figure) : d.subtitle}`,
-				equations: [...d.equations(this.figure), `<span class="chaos-note">${d.note(this.start)}</span>`]
+				equations: [...d.equations(this.figure), `<span class="planets-note">${d.note(this.start)}</span>`]
 			};
 		}
 
@@ -418,7 +418,7 @@
 	Orbits.nextGreat = nextGreat;
 	Orbits.info = { title: "The planets' dance", equations: [] };
 
-	root.ChaosSimulations = root.ChaosSimulations || {};
-	root.ChaosSimulations.orbits = Orbits;
+	root.PlanetsSimulations = root.PlanetsSimulations || {};
+	root.PlanetsSimulations.orbits = Orbits;
 	if (typeof module !== "undefined") module.exports = { Orbits };
 })(typeof window !== "undefined" ? window : globalThis);
