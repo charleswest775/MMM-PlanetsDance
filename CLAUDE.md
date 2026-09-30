@@ -35,7 +35,7 @@ was the `orbits` simulation there.
 The shell (`MMM-PlanetsDance.js`, `node_helper.js`'s stats panel, `dev/preview.html`) is shared
 in spirit with the sibling modules split out at the same time (MMM-ChaosTheory, MMM-Atom,
 MMM-FractalZoom, MMM-Chladni, MMM-SacredGeometry, MMM-Tilings, MMM-SnowCrystal, MMM-NightSky,
-MMM-PhotoDeck, all under `~/dev/mirror-modules`): a fix there probably belongs in the siblings too.
+MMM-PhotoDeck, all under `~/dev/mirror-modules`, MMM-StandardMap, MMM-ChaoticWaterwheel, MMM-DoubleSlit, MMM-Sandpile, MMM-Harmonograph): a fix there probably belongs in the siblings too.
 
 ## On the mirror
 
